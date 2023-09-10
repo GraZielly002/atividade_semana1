@@ -7,44 +7,49 @@
     <title>Formulário</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
-         <h1>Formulário de contato</h1>
+<body class="p-3 mb-2 bg-transparent text-bod">
+    <div class="container p-3 mb-2 bg-light text-dark rounded-4">
+         <h1 class="container text-center">Formulário de contato</h1>
         <form action="answer.php" method="post">
             <div>
-                <label for="idNome" class="">Nome:</label>
-                <input type="text" name="campoNome" placeholder="Digite seu nome" id="idNome" class="">
+                <label for="idNome" class="form-label">Nome:</label>
+                <input type="text" name="campoNome" placeholder="Digite seu nome" id="idNome" class="form-control">
             </div>
+            <br>
             <div>
-                <label for="idSocial" class="">Nome social:</label>
-                <input type="text" name="campoSocial" placeholder="Digite seu nome" id="idSocial" class="">
+                <label for="idSocial" class="form-label">Nome social:</label>
+                <input type="text" name="campoSocial" placeholder="Digite seu nome" id="idSocial" class="form-control">
             </div>
+            <br>
             <div>
-                <label for="idEmail" class="">E-mail:</label>
-                <input type="email" name="campoEmail" placeholder="Brunagatinha<3@gmail.com" id="idEmail" class="">
+                <label for="idEmail" class="form-label">E-mail:</label>
+                <input type="email" name="campoEmail" placeholder="Brunagatinha<3@gmail.com" id="idEmail" class="form-control">
             </div>
+            <br>
             <div>
-                <label for="idAssunto" class="">Assunto:</label>
-                <input type="text" name="campoAssunto" id="idAssunto" class="">
+                <label for="idAssunto" class="form-label">Assunto:</label>
+                <input type="text" name="campoAssunto" id="idAssunto" class="form-control">
             </div>
-            <div>
+            <br>
+            <div class="form-check">
                 <label><h2>Qual seu gênero?</h2></label>
-                <label>
-                    <input type="radio" name="genero" value="Feminino"> Feminino
+                <br>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="genero" value="Feminino"> Feminino
                 </label>
                     <br>
-                <label>
-                    <input type="radio" name="genero" value="Masculino"> Masculino
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="genero" value="Masculino"> Masculino
                 </label>
                     <br>
-                <label>
-                    <input type="radio" name="genero" value="Outro"> Outro
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="genero" value="Outro"> Outro
                 </label>
             </div>
                 <br>
             <div>
                 <label for="feliz?">Qual seu nivel de satisfação:</label>
-                    <select name="feliz?" id="feliz?">
+                    <select class="form-select" name="feliz?" id="feliz?">
                         <option value="Feliz">Feliz</option>
                         <option value="Bom">Bom</option>
                         <option value="Mediano">Mediano</option>
@@ -52,14 +57,15 @@
                     </select>
             </div>
                 <br>
-            <div class="">
+            <div class="mb-3">
                 <label for="idAbout">Nos conte um pouco sobre você:</label>
                     <br>
                     <br>
-                <textarea name="campoAbout" id="idAbout" class="" rows="6"></textarea>
+                <textarea name="campoAbout" id="idAbout" class="form-control" rows="6"></textarea>
             </div>
                 <br>
-            <button type="submit" class="">Enviar</button>
+            <button type="submit" class="btn btn-outline-info container text-center">Enviar</button>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         </form>
     </div>
 </body>
